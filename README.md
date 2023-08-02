@@ -24,6 +24,14 @@ From Alphabet Soup’s business team, the data contains more than 34,000 organiz
 + Features used were all but target
 + Dropped features include **EIN** & **NAME**
 
+#### Initial Model Loss
+
+<img src="Images/InitialModelLoss.png">
+
+#### Optimal Model Loss
+
+<img src="Images/OptimalModelLoss.png">
+
 ## NN Architecture
 There are three hidden layers, the number of neurons in total add up to eighty in total. The activation function that was found to be optimal was relu. I developed three different neural network architectures that topped off at 73% accuracy. The best model incorporated keras tuner and found the optimal hyperparameters possible. The initial neural network had two hidden layers with 150 total neurons. This model had signs of overfitting. The second NN architecture had three hidden layers with a total of 175 neurons. This model did better but since we incorporated by early stopping along with dropout regularization with 20% of neurons that are least significant in the final output had been dropped. Finally, the keras tuner produced the optimal results.
 
